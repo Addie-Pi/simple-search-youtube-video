@@ -8,6 +8,7 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null }
 
   componentDidMount() {
+    // set default search term
     this.onTermSubmit('chill music')
   }
 
@@ -29,7 +30,7 @@ class App extends React.Component {
   }
 
   onVideoSelect = (video) => {
-    // console.log('consoleFromApp=> ', video)
+    console.log('consoleFromApp=> ', video)
 
     this.setState({ selectedVideo: video })
   }

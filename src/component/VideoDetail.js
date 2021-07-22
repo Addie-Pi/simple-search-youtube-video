@@ -1,7 +1,8 @@
 const VideoDetail = ({ videoDetail }) => {
-  //   if (!videoDetail) {
-  //     return <div>Loading...</div>
-  //   }
+  if (!videoDetail) {
+    return <div>Loading...</div>
+  }
+  console.log('videoDetail=> ', videoDetail)
 
   const videoSrc = `https://www.youtube.com/embed/${videoDetail.id.videoId}`
 
